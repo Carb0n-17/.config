@@ -1,5 +1,7 @@
 # Changelog
 
+This changelog documents only user-made changes. Files or modifications generated automatically by the system are intentionally excluded, even if they exist in the repository history.
+
 ## 2026-07-12
 
 Fresh install of Arch Linux + Hyprland
