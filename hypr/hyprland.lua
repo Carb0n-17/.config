@@ -58,6 +58,7 @@ local polkit      = "/usr/lib/hyprpolkitagent/hyprpolkitagent"
 -- end)
 hl.on("hyprland.start", function ()
   hl.exec_cmd(polkit)
+  hl.exec_cmd("hyprpaper & quickshell")
 end)
 
 
@@ -315,6 +316,10 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+
+-- Custom keybindings
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("code"))
+hl.bind(mainMod .. " + F",     hl.dsp.exec_cmd("firefox"))
 
 
 --------------------------------
